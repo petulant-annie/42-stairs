@@ -1,10 +1,17 @@
+require('dotenv').config();
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { MongooseModule } from '@nestjs/mongoose';
+
+import { LinkController } from './link/link.controller';
+import { LinkModule } from './link/link.module';
+import { LinkService } from './link/link.service';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [
+    MongooseModule.forRoot(process.env.MONGO_DB),
+  ],
+  controllers: [],
+  providers: [],
 })
-export class AppModule {}
+
+export class AppModule { }
