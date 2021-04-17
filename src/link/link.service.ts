@@ -5,7 +5,7 @@ import { LinkDocument } from './link.schema';
 
 @Injectable()
 export class LinkService {
-  constructor(@InjectModel('Links') private linkModel: Model<LinkDocument>) { }
+  constructor(@InjectModel('Links') private linkModel: Model<LinkDocument>) {}
 
   getHello(): string {
     return 'Hello World!';

@@ -7,7 +7,7 @@ export type LinkDocument = Link & Document;
 export class Link {
   @Prop()
   id: string;
-  
+
   @Prop()
   link: string;
 }

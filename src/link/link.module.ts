@@ -3,9 +3,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { LinkSchema } from './link.schema';
 
 @Module({
-  imports: [
-    MongooseModule.forFeature([{name: 'Links', schema: LinkSchema}]),
-  ],
+  imports: [MongooseModule.forFeature([{ name: 'Links', schema: LinkSchema }])],
   controllers: [],
   providers: [],
 })
