@@ -3,10 +3,10 @@ import { LinkService } from './link.service';
 
 @Controller()
 export class LinkController {
-  constructor(private readonly appService: LinkService) {}
+  constructor(private readonly linkService: LinkService) {}
 
   @Get()
   getHello(): string {
-    return this.appService.getHello();
+    return this.linkService.getHello();
   }
 }
